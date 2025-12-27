@@ -10,7 +10,7 @@ Este repositorio simplifica y acorta enormemente el proceso de instalación de O
 ## Instalación  :gear:
 Clona este repositorio:  
 ```
-git clone https://github.com/HectorCRM/Odoo-esay-installer.git
+git clone https://github.com/HectorCRM/Odoo-easy-installer.git
 ```
 Dale permiso de ejecución al archivo ***instalador_odoo.sh***:  
 ```
