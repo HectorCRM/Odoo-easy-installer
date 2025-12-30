@@ -22,7 +22,7 @@ Ejecútalo:
 ```
 ./instaladorV2.sh
 ```
-![Inicio del instalador](.images/imgs_install/Header.png)  
+![Inicio del instalador](./images/imgs_install/Header.png)  
 Ahora sólo ve siguiendo los pasos indicados en la terminal.  
 **#1.** El instalador comprobará la conexión a internet lanzando un ping a github.com.  
 **#2.** Preguntará que versión de Odoo clonar(**ej: 18.0**).  
@@ -49,7 +49,7 @@ Elimina de la memoria todas las variables y borra los archivos temporales.
 ![Final de la instalación](./images/imgs_install/instalación_terminada.png)  
   
 Y al fin, tras algo menos de 5 minutos...  
-![Pantalla inicio Odoo](./images/Odoo_instalado.png)  
+![Pantalla inicio Odoo](./images/imgs_install/Odoo_instalado.png)  
 
 ## Desinstalación :gear:
 Para una desinstalación completa es necesario que el archivo **pkgs-installed-odoo.txt** este presente en la misma carpeta, ya que en el se guarda el nombre de todos los paquetes instalados al instalar Odoo en el sistema. **Sin el estos paquetes no podrán ser eliminados**.  
@@ -75,7 +75,7 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Linux Mint 22+/Ubuntu 24+  
  - Conexión a internet  
 ## Mejoras futuras :rocket:
- - Desarrollar desinstalador(En proceso). :heavy_check_mark:  
+ - Desarrollar desinstalador. :heavy_check_mark:  
  - Opción para custom-addons/puerto personalizados en installer.conf.  
  - Alternativa preconfigurada para instalación desatendida.  
 ## Test :heavy_check_mark:
