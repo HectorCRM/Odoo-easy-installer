@@ -1,11 +1,12 @@
 # Odoo-easy-installer ![Logo Odoo](https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo_small.png)  
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/HectorCRM/Odoo-esay-installer/total)
-![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-esay-installer?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-esay-installer?style=round)
 ![Visitas](https://komarev.com/ghpvc/?username=HectorCRM-Odoo-easy-installer&color=blue&style=round&label=Visitas:)
 ## Antes de usar  ⚠️
 Por el momento solo he probado este instalador en VM con Linux Mint 22.2, para un uso educativo. Para usos en entornos no educativos es más que recomendable revisar las variables al inicio del script y cambiar contraseñas tras la instalación.  
-## ¿Para qué sirve este repositorio? ⁉️
-Si alguna vez te has enfrentado a instalar Odoo por primera vez, sabrás lo frustrante que puede llegar a ser. Pero hay que tratar de convertir esos retos en posibilidades.  
+## ¿Cual es la utilidad de este proyecto? ⁉️
+Si alguna vez te has enfrentado a instalar Odoo por primera vez, sabrás lo frustrante que puede llegar a ser. Pero hay que tratar de convertir retos en posibilidades.  
+Así nace este proyecto, de la frustración de tratar de instalar el ERP de Odoo sin exito. Decidí coger esa frustración y crear un proyecto que pueda ser de utilidad a los demás.  
 Este proyecto simplifica y acorta enormemente el proceso de instalación de Odoo. De hecho **se instala en poco menos de 5 minutos.**  
 ## ¿Que hay de nuevo en esta V2.0? :bulb:
 Para esta versión se ha creado un archivo de configuración, **installer.conf**, para poder personalizar la instalación sin editar el script. Se a desarrollado un desinstalador para poder revertir la instalación(en fase de pruebas).  
@@ -73,10 +74,13 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
 
 ## Requisitos :clipboard:
  - Linux Mint 22+/Ubuntu 24+  
+ - Git  
  - Conexión a internet  
 ## Mejoras futuras :rocket:
  - Desarrollar desinstalador. :heavy_check_mark:  
  - Opción para custom-addons/puerto personalizados en installer.conf.  
- - Alternativa preconfigurada para instalación desatendida.  
+ - Implementar el uso de banderas.  
 ## Test :heavy_check_mark:
 Actualmente probado con Linux Mint 22.2 en máquina virtual.  
+## Versiones :pushpin:
+[Ver CHANGELOG.md](./CHANGELOG.md)
