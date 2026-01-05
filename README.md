@@ -26,7 +26,7 @@ Es posible ejecutar el instalador con las banderas -x y -vm a la vez:
 ## Instalación  :gear:
 Clona este repositorio:  
 ```
-git clone https://github.com/HectorCRM/Odoo-esay-installer.git
+git clone https://github.com/HectorCRM/Odoo-easy-installer.git
 ```
 Dale permiso de ejecución al archivo ***instalador.sh***:  
 ```
