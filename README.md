@@ -13,7 +13,7 @@ Este proyecto simplifica y acorta enormemente el proceso de instalación de Odoo
 En esta versión se ha implementado el uso de banderas en el script:  
  - **--help**: Muestra un resumen de las banderas disponibles para ejecutar el instalador.  
  - **--version**: Muestra la version del instalador.  
- - **-x o --express**: Permite ejecutar el instalador sin interacción con el usuario y sin sleeps, ahorrando 1 minuto de media en la instalación segun las pruebas que he podido hacer.  
+ - **-x** o **--express**: Permite ejecutar el instalador sin interacción con el usuario y sin sleeps, ahorrando 1 minuto de media en la instalación segun las pruebas que he podido hacer.  
  - **-x--help**: Ofrece información de como emplear la bandera **-x o --express**.  
  - **-vm**: Indica al instalador que Odoo va a ser instalado en una máquina virtual, por lo que al finalizar la instalación mostrará la IP de la VM para poder acceder a Odoo desde la máquina host.  
   
