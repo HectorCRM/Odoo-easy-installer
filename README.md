@@ -21,7 +21,7 @@ Es posible ejecutar el instalador con las banderas -x y -vm a la vez:
 ```
 ./instalador.sh -x -vm  
 ```
-![Instalador iniciado con flags -x -vm](.images/imgsV2.2/instalador-x-vm.png)  
+![Instalador iniciado con flags -x -vm](./images/imgsV2.2/instalador-x-vm.png)  
 
 ## Instalación  :gear:
 Clona este repositorio:  
