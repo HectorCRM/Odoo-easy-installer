@@ -67,13 +67,13 @@ Y al fin, tras algo menos de 5 minutos...
 
 ## Desinstalación :gear:
 Para una desinstalación completa es necesario que el archivo **pkgs-installed-odoo.txt** este presente en la misma carpeta, ya que en el se guarda el nombre de todos los paquetes instalados al instalar Odoo en el sistema. **Sin el estos paquetes no podrán ser eliminados**.  
-Para desinstalar Odoo primero hay que dar permiso de ejecución al archivo **desinstaladorV1.sh**:  
+Para desinstalar Odoo primero hay que dar permiso de ejecución al archivo **desinstalador.sh**:  
 ```
-chmod +x desinstaladorV1.sh
+chmod +x desinstalador.sh
 ```
 Después, ejeútalo:  
 ```
-./instaladorV1.sh
+./desinstalador.sh
 ```
 ![permisos, ejecucion y header](./images/imgs_uninstall/header.png)  
 Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(sólo con Odoo).  
