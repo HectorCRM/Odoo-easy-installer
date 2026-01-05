@@ -3,25 +3,38 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-esay-installer?style=round)
 ![Visitas](https://komarev.com/ghpvc/?username=HectorCRM-Odoo-easy-installer&color=blue&style=round&label=Visitas:)
 ## Antes de usar  ⚠️
-Por el momento solo he probado este instalador en VM con Linux Mint 22.2, para un uso educativo. Para usos en entornos no educativos es más que recomendable revisar las variables al inicio del script y cambiar contraseñas tras la instalación.  
+Por el momento sólo he probado este instalador en VM con Linux Mint 22.2, para un uso educativo.  
+Para usos en entornos no educativos es más que recomendable eliminar contraseñas del archivo **installer.conf** si se configura para una instalación rápida, asi como del archivo **informe-instalacion.html** o cambiarlas tras la instalación.  
 ## ¿Cual es la utilidad de este proyecto? ⁉️
 Si alguna vez te has enfrentado a instalar Odoo por primera vez, sabrás lo frustrante que puede llegar a ser. Pero hay que tratar de convertir retos en posibilidades.  
 Así nace este proyecto, de la frustración de tratar de instalar el ERP de Odoo sin exito. Decidí coger esa frustración y crear un proyecto que pueda ser de utilidad a los demás.  
-Este proyecto simplifica y acorta enormemente el proceso de instalación de Odoo. De hecho **se instala en poco menos de 5 minutos.**  
-## ¿Que hay de nuevo en esta V2.0? :bulb:
-Para esta versión se ha creado un archivo de configuración, **installer.conf**, para poder personalizar la instalación sin editar el script. Se a desarrollado un desinstalador para poder revertir la instalación(en fase de pruebas).  
+Este proyecto simplifica y acorta enormemente el proceso de instalación de Odoo. De hecho **se instala en poco menos de 5 minutos(1 minuto menos con la bandera -x).**  
+## ¿Que hay de nuevo en esta V2.2? :bulb:
+En esta versión se ha implementado el uso de banderas en el script:  
+ - **--help**: Muestra un resumen de las banderas disponibles para ejecutar el instalador.  
+ - **--version**: Muestra la version del instalador.  
+ - **-x o --express**: Permite ejecutar el instalador sin interacción con el usuario y sin sleeps, ahorrando 1 minuto de media en la instalación segun las pruebas que he podido hacer.  
+ - **-x--help**: Ofrece información de como emplear la bandera **-x o --express**.  
+ - **-vm**: Indica al instalador que Odoo va a ser instalado en una máquina virtual, por lo que al finalizar la instalación mostrará la IP de la VM para poder acceder a Odoo desde la máquina host.  
+  
+Es posible ejecutar el instalador con las banderas -x y -vm a la vez:  
+```
+./instalador.sh -x -vm  
+```
+![Instalador iniciado con flags -x -vm](.images/imgsV2.2/instalador-x-vm.png)  
+
 ## Instalación  :gear:
 Clona este repositorio:  
 ```
 git clone https://github.com/HectorCRM/Odoo-esay-installer.git
 ```
-Dale permiso de ejecución al archivo ***instaladorV2.sh***:  
+Dale permiso de ejecución al archivo ***instalador.sh***:  
 ```
-chmod +x instaladorV2.sh
+chmod +x instalador.sh
 ```
-Ejecútalo:  
+Ejecútalo, usando banderas de forma opcional:  
 ```
-./instaladorV2.sh
+./instalador.sh
 ```
 ![Inicio del instalador](./images/imgs_install/Header.png)  
 Ahora sólo ve siguiendo los pasos indicados en la terminal.  
@@ -30,12 +43,12 @@ Ahora sólo ve siguiendo los pasos indicados en la terminal.
 **#3.** Después pedirá que el usuario introduzca y confirme una contraseña para **PostgreSQL**(se instalará automaticamente más tarde).  
 Entre esta interacción y la siguiente el instalador hara:  
  - Actualizará los repositorios del sistema y creará un archivo de texto temporal con todos los que estan instalados antes de instalar nada para Odoo, esto permitirá(en un futuro) hacer una desinstalación limpia.  
- ![Actualización del sistema](./images/imgs_install/Actualización_sistema.png)  
+![Actualización del sistema](./images/imgs_install/Actualización_sistema.png)  
  - Instalará todas las dependencias necesarias para el funcionamiento de Odoo.  
  - Creará el usuario odoo en el sistema junto con su directorio.  
  - Creará el usuario y contraseña para odoo en PostgreSQL.  
  - Clonará la versión de Odoo elegida por el usuario en el directorio personal del usuario odoo.  
- ![Clonando desde GitHub](./images/imgs_install/usuarios.png)  
+![Clonando desde GitHub](./images/imgs_install/usuarios.png)  
  - Creará, si no existe, el directorio para custom-addons.  
  - Creará un entorno virtual con python3-venv e instalará en el los paquetes del **requirements.txt**.   
  
@@ -45,7 +58,7 @@ Entre esta interacción y la siguiente el instalador hara:
 En futuras mejoras daré opcion a modificar el puerto desde el mismo instalador.  
 **#7.** Recarga el demonio e inicia el servicio de Odoo.  
 **#8.** Crea un archivo de texto temporal con los paquetes instalados en el sistema tras instalar Odoo. Ordena el archivo que se creo antes de iniciar la instalación y el que se acaba de crear y los compara, guardando sólo los que se han instalado durante la instalación de Odoo en un nuevo archivo, el cual en un futuro permitirá hacer una desinstalación limpia.  
-**#9.** Finaliza la instalación y genera un informe final, con la fecha y la hora en la que se realizó, y los diferentes usuarios y contraseñas.  
+**#9.** Finaliza la instalación y genera un [informe](./docs/informe-instalacion.html) final, con la fecha y la hora en la que se realizó, y los diferentes usuarios y contraseñas.  
 Elimina de la memoria todas las variables y borra los archivos temporales.  
 ![Final de la instalación](./images/imgs_install/instalación_terminada.png)  
   
@@ -78,8 +91,10 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Conexión a internet  
 ## Mejoras futuras :rocket:
  - Desarrollar desinstalador. :heavy_check_mark:  
- - Opción para custom-addons/puerto personalizados en installer.conf.  
- - Implementar el uso de banderas.  
+ - Opción para custom-addons/puerto personalizados en installer.conf. :heavy_check_mark:  
+ - Implementar el uso de banderas. :heavy_check_mark:  
+ - Probar en Ubuntu 24+.  
+ - Probar en Debian.  
 ## Test :heavy_check_mark:
 Actualmente probado con Linux Mint 22.2 en máquina virtual.  
 ## Versiones :pushpin:
