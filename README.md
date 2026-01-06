@@ -2,6 +2,8 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/HectorCRM/Odoo-easy-installer/total?label=Descargas)
 ![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-esay-installer?style=round)
 ![Visitas](https://komarev.com/ghpvc/?username=HectorCRM-Odoo-easy-installer&color=blue&style=round&label=Visitas:)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/HectorCRM/93e8c534db60cd68c305a0a7d9c810ee/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+
 ## Antes de usar  ⚠️
 Por el momento sólo he probado este instalador en VM con Linux Mint 22.2, para un uso educativo.  
 Para usos en entornos no educativos es más que recomendable eliminar contraseñas del archivo **installer.conf** si se configura para una instalación rápida, asi como del archivo **informe-instalacion.html** o cambiarlas tras la instalación.  
