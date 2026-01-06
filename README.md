@@ -2,15 +2,33 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/HectorCRM/Odoo-easy-installer/total?label=Descargas)
 ![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-esay-installer?style=round)
 ![Visitas](https://komarev.com/ghpvc/?username=HectorCRM-Odoo-easy-installer&color=blue&style=round&label=Visitas:)
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/HectorCRM/93e8c534db60cd68c305a0a7d9c810ee/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/HectorCRM/93e8c534db60cd68c305a0a7d9c810ee/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)  
 
+<details>
+  <summary><b>Índice</b></summary>
+  <ol>
+    <li><a href="#antes-de-usar">Antes de usar</a></li>
+    <li><a href="#utilidad-proyecto">Utilidad del proyecto</a></li>
+    <li><a href="#version">Novedades versión</a></li>
+    <li><a href="#instalacion">Guia de instalación</a></li>
+    <li><a href="#desinstalacion">Guia de desinstalación</a></li>
+    <li><a href="#requisitos">Requisitos para uso</a></li>
+    <li><a href="#mejoras">Mejoras futuras</a></li>
+    <li><a href="#test">Distribuciones probadas</a></li>
+    <li><a href="#versiones">Historial de versiones</a></li>
+  </ol>
+</details>
+
+<a name="antes-de-usar"></a>
 ## Antes de usar  ⚠️
 Por el momento sólo he probado este instalador en VM con Linux Mint 22.2, para un uso educativo.  
-Para usos en entornos no educativos es más que recomendable eliminar contraseñas del archivo **installer.conf** si se configura para una instalación rápida, asi como del archivo **informe-instalacion.html** o cambiarlas tras la instalación.  
+Para usos en entornos no educativos es más que recomendable eliminar contraseñas del archivo **installer.conf** si se configura para una instalación rápida, asi como del archivo **informe-instalacion.html** o cambiarlas tras la instalación. 
+<a name="utilidad-proyecto"></a>
 ## ¿Cual es la utilidad de este proyecto? ⁉️
 Si alguna vez te has enfrentado a instalar Odoo por primera vez, sabrás lo frustrante que puede llegar a ser. Pero hay que tratar de convertir retos en posibilidades.  
 Así nace este proyecto, de la frustración de tratar de instalar el ERP de Odoo sin exito. Decidí coger esa frustración y crear un proyecto que pueda ser de utilidad a los demás.  
 Este proyecto simplifica y acorta enormemente el proceso de instalación de Odoo. De hecho **se instala en poco menos de 5 minutos(1 minuto menos con la bandera -x).**  
+<a name="version"></a>
 ## ¿Que hay de nuevo en esta V2.2? :bulb:
 En esta versión se ha implementado el uso de banderas en el script:  
  - **--help**: Muestra un resumen de las banderas disponibles para ejecutar el instalador.  
@@ -24,7 +42,7 @@ Es posible ejecutar el instalador con las banderas -x y -vm a la vez:
 ./instalador.sh -x -vm  
 ```
 ![Instalador iniciado con flags -x -vm](./images/imgsV2.2/instalador-x-vm.png)  
-
+<a name="instalacion"></a>
 ## Instalación  :gear:
 Clona este repositorio:  
 ```
@@ -66,7 +84,7 @@ Elimina de la memoria todas las variables y borra los archivos temporales.
   
 Y al fin, tras algo menos de 5 minutos...  
 ![Pantalla inicio Odoo](./images/imgs_install/Odoo_instalado.png)  
-
+<a name="desinstalacion"></a>
 ## Desinstalación :gear:
 Para una desinstalación completa es necesario que el archivo **pkgs-installed-odoo.txt** este presente en la misma carpeta, ya que en el se guarda el nombre de todos los paquetes instalados al instalar Odoo en el sistema. **Sin el estos paquetes no podrán ser eliminados**.  
 Para desinstalar Odoo primero hay que dar permiso de ejecución al archivo **desinstalador.sh**:  
@@ -86,18 +104,24 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
 **#5.** Buscara el archivo **pkgs-installed-odoo.txt** y pedirá confirmación para eliminar del sistema todos los paquetes que figuran en él.
 ![Desinstalación](./images/imgs_uninstall/Final_desisntalación.png)
 
-
+<a name="requisitos"></a>
 ## Requisitos :clipboard:
  - Linux Mint 22+/Ubuntu 24+  
  - Git  
- - Conexión a internet  
+ - Conexión a internet
+ - 
+<a name="mejoras"></a> 
 ## Mejoras futuras :rocket:
  - Desarrollar desinstalador. :heavy_check_mark:  
  - Opción para custom-addons/puerto personalizados en installer.conf. :heavy_check_mark:  
  - Implementar el uso de banderas. :heavy_check_mark:  
  - Probar en Ubuntu 24+.  
- - Probar en Debian.  
+ - Probar en Debian.
+ - 
+<a name="test"></a> 
 ## Test :heavy_check_mark:
 Actualmente probado con Linux Mint 22.2 en máquina virtual.  
+
+<a name="versiones"></a>
 ## Versiones :pushpin:
 [Ver CHANGELOG.md](./CHANGELOG.md)
