@@ -109,7 +109,7 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Linux Mint 22+/Ubuntu 24+  
  - Git  
  - Conexión a internet
- - 
+
 <a name="mejoras"></a> 
 ## Mejoras futuras :rocket:
  - Desarrollar desinstalador. :heavy_check_mark:  
@@ -117,7 +117,8 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Implementar el uso de banderas. :heavy_check_mark:  
  - Probar en Ubuntu 24+.  
  - Probar en Debian.
- - 
+ - Desarrollar variante para gestor de paquetes **dnf**  
+
 <a name="test"></a> 
 ## Test :heavy_check_mark:
 Actualmente probado con Linux Mint 22.2 en máquina virtual.  
