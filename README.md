@@ -14,7 +14,7 @@
     <li><a href="#desinstalacion">Guia de desinstalación</a></li>
     <li><a href="#requisitos">Requisitos para uso</a></li>
     <li><a href="#mejoras">Mejoras futuras</a></li>
-    <li><a href="#test">Distribuciones probadas</a></li>
+    <li><a href="#distribuciones-linux-en-las-que-se-ha-probado">Distribuciones probadas</a></li>
     <li><a href="#versiones">Historial de versiones</a></li>
   </ol>
 </details>
@@ -106,7 +106,7 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
 
 <a name="requisitos"></a>
 ## Requisitos :clipboard:
- - Linux Mint 22+/Ubuntu 24+  
+ - <li><a href="#distribuciones-linux-en-las-que-se-ha-probado">Ver distribuciones de Linux soportadas</a></li>  
  - Git  
  - Conexión a internet
 
@@ -115,14 +115,15 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Desarrollar desinstalador. :heavy_check_mark:  
  - Opción para custom-addons/puerto personalizados en installer.conf. :heavy_check_mark:  
  - Implementar el uso de banderas. :heavy_check_mark:  
- - Probar en Ubuntu 24+.  
- - Probar en Debian.
+ - Probar en Ubuntu 24.04.  
+ - Probar en Debian. :heavy_check_mark:  
  - Desarrollar variante para gestor de paquetes **dnf**  
 
 <a name="test"></a> 
 ## Distribuciones Linux en las que se ha probado :heavy_check_mark:
- - Linux Mint 22.2 :heavy_check_mark:.  
- - [Debian 12](./images/distros_test/Odoo-Debian12(bookworm).png) :heavy_check_mark:  
+ - :heavy_check_mark:Linux Mint 22.2 .  
+ - :heavy_check_mark:[Debian 12](./images/distros_test/Odoo-Debian12(bookworm).png).
+ - ❌ Debian 13: El paquete **wkhtmltopdf** ha sido eliminado de los repositorios de Debian. 
 
 <a name="versiones"></a>
 ## Versiones :pushpin:
