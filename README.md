@@ -120,8 +120,9 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Desarrollar variante para gestor de paquetes **dnf**  
 
 <a name="test"></a> 
-## Test :heavy_check_mark:
-Actualmente probado con Linux Mint 22.2 en máquina virtual.  
+## Distribuciones Linux en las que se ha probado :heavy_check_mark:
+ - Linux Mint 22.2 :heavy_check_mark:.  
+ - [Debian 12](./images/distros_test/Odoo-Debian12(bookworm).png) :heavy_check_mark:  
 
 <a name="versiones"></a>
 ## Versiones :pushpin:
