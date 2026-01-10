@@ -123,7 +123,8 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
 ## Distribuciones Linux en las que se ha probado :heavy_check_mark:
  - :heavy_check_mark:Linux Mint 22.2 .  
  - :heavy_check_mark:[Debian 12](./images/distros_test/Odoo-Debian12(bookworm).png).
- - ❌ Debian 13 --> El paquete **wkhtmltopdf** ha sido eliminado de los repositorios de Debian. 
+ - ❌ Debian 13 --> El paquete **wkhtmltopdf** ha sido eliminado de los repositorios de Debian.  
+ - :heavy_check_mark:[Ubuntu 24.04](./images/distros_test/Odoo-Ubuntu24.04.png) --> No se puede abrir el informe tras la instalación.  
 
 <a name="versiones"></a>
 ## Versiones :pushpin:
