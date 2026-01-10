@@ -1,6 +1,6 @@
 # Odoo-easy-installer ![Logo Odoo](https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo_small.png)  
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/HectorCRM/Odoo-easy-installer/total?label=Descargas)
-![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-esay-installer?style=round)
+![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-easy-installer?style=round)
 ![Visitas](https://komarev.com/ghpvc/?username=HectorCRM-Odoo-easy-installer&color=blue&style=round&label=Visitas:)
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/HectorCRM/93e8c534db60cd68c305a0a7d9c810ee/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)  
 
