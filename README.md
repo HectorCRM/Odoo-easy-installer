@@ -116,7 +116,7 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - Desarrollar desinstalador. :heavy_check_mark:  
  - Opción para custom-addons/puerto personalizados en installer.conf. :heavy_check_mark:  
  - Implementar el uso de banderas. :heavy_check_mark:  
- - Probar en Ubuntu 24.04.  
+ - Probar en Ubuntu 24.04. :heavy_check_mark:  
  - Probar en Debian. :heavy_check_mark:  
  - Desarrollar variante para gestor de paquetes **dnf**  
 
