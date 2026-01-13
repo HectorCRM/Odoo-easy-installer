@@ -15,14 +15,15 @@
     <li><a href="#requisitos">Requisitos para uso</a></li>
     <li><a href="#mejoras">Mejoras futuras</a></li>
     <li><a href="#distribuciones-linux-en-las-que-se-ha-probado">Distribuciones probadas</a></li>
+    <li><a href="#contribuye">¿Te ha sido útil?</a></li>
     <li><a href="#versiones">Historial de versiones</a></li>
   </ol>
 </details>
 
 <a name="antes-de-usar"></a>
 ## Antes de usar  ⚠️
-Por el momento sólo he probado este instalador en VM con Linux Mint 22.2, para un uso educativo.  
-Para usos en entornos no educativos es más que recomendable eliminar contraseñas del archivo **installer.conf** si se configura para una instalación rápida, asi como del archivo **informe-instalacion.html** o cambiarlas tras la instalación. 
+Por el momento el instalador ha sido probado [en estas distribuciones de Linux](#distribuciones-linux-en-las-que-se-ha-probado) para un uso educativo y de aprendizaje.  
+Para su uso en entornos no educativos es más que recomendable eliminar contraseñas del archivo **installer.conf** si se configura para una instalación rápida, asi como del archivo **informe-instalacion.html** o cambiarlas tras la instalación. 
 <a name="utilidad-proyecto"></a>
 ## ¿Cual es la utilidad de este proyecto? ⁉️
 Si alguna vez te has enfrentado a instalar Odoo por primera vez, sabrás lo frustrante que puede llegar a ser. Pero hay que tratar de convertir retos en posibilidades.  
@@ -124,8 +125,12 @@ Ahora solo tienes que ir confirmando las acciones ya que estas son destructivas(
  - :heavy_check_mark:Linux Mint 22.2 .  
  - :heavy_check_mark:[Debian 12](./images/distros_test/Odoo-Debian12(bookworm).png).
  - ❌ Debian 13 --> El paquete **wkhtmltopdf** ha sido eliminado de los repositorios de Debian.  
- - :heavy_check_mark:[Ubuntu 24.04](./images/distros_test/Odoo-Ubuntu24.04.png) --> No se puede abrir el informe tras la instalación.  
+ - :heavy_check_mark:[Ubuntu 24.04](./images/distros_test/Odoo-Ubuntu24.04.png) --> No se puede abrir el informe tras la instalación.
+
+<a name="contribuye"></a>
+## Contribuye ⭐ ![GitHub Repo stars](https://img.shields.io/github/stars/HectorCRM/Odoo-easy-installer?style=round)  
+¿Has encontrado útil el proyecto? Dale una estrella si lo has encontrado de utilidad y ayuda a que llegue a más gente.  
 
 <a name="versiones"></a>
 ## Versiones :pushpin:
-[Ver CHANGELOG.md](./CHANGELOG.md)
+[Ver CHANGELOG](./CHANGELOG.md)
