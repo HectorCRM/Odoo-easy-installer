@@ -1,5 +1,10 @@
 # Changelog
 
+## V3.0 - 16/01/2026
+### Modificado
+ - Modificcion de **instalador.sh**, ahora, mediante el uso de la bandera **--pgadmin**, permite la instalación de PgAdmin4 v9.11 tras la instalación de Odoo, clonando el instalador de mi repositorio [pgAdmin4-easy-installer](https://github.com/HectorCRM/pgAdmin4-easy-installer)  
+ - Omisión de caracteres de contraseña en pantalla, sustituyendolos por asteriscos *.  
+ 
 ## V2.2 - 05/01/2026
 ### Añadido
  - Carpeta **docs** para archivos de ejemlpo.

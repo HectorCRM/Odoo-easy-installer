@@ -30,19 +30,19 @@ Si alguna vez te has enfrentado a instalar Odoo por primera vez, sabrás lo frus
 Así nace este proyecto, de la frustración de tratar de instalar el ERP de Odoo sin exito. Decidí coger esa frustración y crear un proyecto que pueda ser de utilidad a los demás.  
 Este proyecto simplifica y acorta enormemente el proceso de instalación de Odoo. De hecho **se instala en poco menos de 5 minutos(1 minuto menos con la bandera -x).**  
 <a name="version"></a>
-## ¿Que hay de nuevo en esta V2.2? :bulb:
-En esta versión se ha implementado el uso de banderas en el script:  
- - **--help**: Muestra un resumen de las banderas disponibles para ejecutar el instalador.  
- - **--version**: Muestra la version del instalador.  
- - **-x** o **--express**: Permite ejecutar el instalador sin interacción con el usuario y sin sleeps, ahorrando 1 minuto de media en la instalación segun las pruebas que he podido hacer.  
- - **-x--help**: Ofrece información de como emplear la bandera **-x o --express**.  
- - **-vm**: Indica al instalador que Odoo va a ser instalado en una máquina virtual, por lo que al finalizar la instalación mostrará la IP de la VM para poder acceder a Odoo desde la máquina host.  
-  
-Es posible ejecutar el instalador con las banderas -x y -vm a la vez:  
+## ¿Que hay de nuevo en esta V3? :bulb:
+Se han omitido los caracteres de las contraseñas, sustituyendolos por "*".  
+Se han añadido dos nuevas banderas al script:  
+ - **--pgadmin**: Esta nueva bandera permite instalar y configurar PgAdmin4 v9.11 en modo servidor al terminar la instalación de Odoo.  
+ - **--pg-help**: Esta bandera amplía la información sobre la anterior.   
+
+Ahora se puede añadir la bandera **--pgadmin** a las que ya habia creadas, o usarla sola:  
 ```
-./instalador.sh -x -vm  
+./instalador.sh --pgadmin  
 ```
-![Instalador iniciado con flags -x -vm](./images/imgsV2.2/instalador-x-vm.png)  
+¿Que hace esta bandera? Esta bandera clona mi repositorio [pgAdmin4-easy-installer](https://github.com/HectorCRM/pgAdmin4-easy-installer) e instala PgAdmin4 despues de instalar Odoo, y tras unos 10 minutos...  
+![Odoo y PgAdmin instalados en 10 minutos!](./images/Oddo-PgAdmin.png)  
+
 <a name="instalacion"></a>
 ## Instalación  :gear:
 Clona este repositorio:  
